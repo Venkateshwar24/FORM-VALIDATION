@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FormValidation</title>
+    <link rel="stylesheet" href="D:\practice\css\formcss.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="D:\practice\js\form.js"></script>
+</head>
+
+<body>
+    <h1 id="form_valid">FORM VALIDATION</h1>
+    <div class="container">
+        <form action="#"  >
+            <fieldset class="bord">
+                <legend>General Details</legend>
+                <div class="d-flex justify-content-between">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <label class="col-sm-5" for="f_name">First Name<span class="required">*</span> <span
+                                    class="col-sm-1">:</span></label>
+                            <input class="col-sm-4" class="form-control" type="text" id="f_name" required>
+                            <span id="firstname" style="color: red;"></span>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-5" for="l_name">Last Name<span class="required">*</span><span
+                                    class="col-sm-1">:</span></label>
+                            <input class="col-sm-4" class="form-control" type="text" id="l_name" required>
+                            <span id="lastname" style="color:red"></span>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-5" for="email_id">Email id<span class="required">*</span><span
+                                    class="col-sm-1">:</span></label>
+                            <input class="col-sm-4" class="form-control" type="email" id="email_id" required>
+                            <span id="emailid" style="color:red"></span>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-5" for="dob">Date of Birth<span class="required">*</span><span
+                                    class="col-sm-1">:</span></label>
+                            <input class="col-sm-4" class="form-control" type="date" id="dob" required>
+                            <span id="birthday" style="color:red"></span>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-5" for="website">Website(URL)<span class="col-sm-1">:</span></label>
+                            <input class="col-sm-4" class="form-control" type="url" id="website">
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-5" for="photo">Your Photo<span class="col-sm-1">:</span> <i
+                                    style="font-size: 10pt; "> <br>(lessthan 2mb)</i></label>
+                            <input class="col-sm-4" class="form-control" type="file" id="photo" >
+                            <span id="picture" style="color:red"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <label class="col-sm-5" for="mob_no">Mobile no<span class="required">*</span><span
+                                    class="col-sm-1">:</span></label>
+                            <input class="col-sm-4" class="form-control" type="text" id="mob_no" required>
+                            <span id="mobileno" style="color:red"></span>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-5" for="father_name">Father's Name<span class="required">*</span><span
+                                    class="col-sm-1">:</span></label>
+                            <input class="col-sm-4" class="form-control" type="text" id="father_name" required>
+                            <span id="father" style="color:red"></span>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-5" for="mother_name">Mother's Name<span class="required">*</span><span
+                                    class="col-sm-1">:</span></label>
+                            <input class="col-sm-4" class="form-control" type="text" id="mother_name" required>
+                            <span id="mother" style="color:red"></span>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-5" for="aadaar_no">Aadhaar no<span class="required">*</span><span
+                                    class="col-sm-1">:</span></label>
+                            <input class="col-sm-4" class="form-control" type="text" id="aadaar_no" required>
+                            <span id="aadaar" style="color:red"></span>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-5" for="gender"> Gender<span class="required">*</span><span
+                                    class="col-sm-1">:</span></label>
+                            <select class="col-sm-4" id="gender" required>
+                                <option value="" selected disabled></option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
+                            </select>
+                            <span id="sex" style="color:red"></span>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-5" for="pan_no">Pan no<span class="col-sm-1">:</span></label>
+                            <input class="col-sm-4" class="form-control" type="text" id="aadaar_no">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary"   onclick="return formvalidation()" id="submit" >Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
